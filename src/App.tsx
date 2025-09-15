@@ -13,7 +13,7 @@ function App() {
     setDiscussionResult('');
 
     try {
-      const response = await fetch('https://express-server-rvyr.onrender.com', {
+      const response = await fetch('https://express-server-rvyr.onrender.com/api/generate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -73,5 +73,3 @@ function App() {
 }
 
 export default App
-
-// Force re-deploy on Cloudflare
