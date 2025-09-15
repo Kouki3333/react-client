@@ -13,7 +13,7 @@ function App() {
     setDiscussionResult('');
 
     try {
-      const response = await fetch('http://localhost:8787/api/generate', {
+      const response = await fetch('https://express-server-rvyr.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
